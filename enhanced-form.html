@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Form</title>
+</head>
+<body>
+
+    <header>
+        <h1>Page de démonstration HTML5</h1>
+    </header>
+
+    <main>
+
+        <!-- Section Listes -->
+        <section>
+            <h2>Liste de fonctionnalités</h2>
+            <ul>
+                <li>Champs texte</li>
+                <li>Case à cocher</li>
+                <li>Radio boutons</li>
+                <li>Menu déroulant</li>
+            </ul>
+        </section>
+
+        <!-- Section Tableaux -->
+        <section>
+            <h2>Tableau d'exemple</h2>
+            <table border="1">
+                <caption>Exemple de tableau utilisateurs</caption>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Âge</th>
+                        <th>Pays</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Luc</td>
+                        <td>23</td>
+                        <td>Togo</td>
+                    </tr>
+                    <tr>
+                        <td>Cynthia</td>
+                        <td>21</td>
+                        <td>France</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Section Médias -->
+        <section>
+            <h2>Exemple d'image</h2>
+            <figure>
+                <img src="https://via.placeholder.com/200" alt="Exemple d'image">
+                <figcaption>Image illustrative</figcaption>
+            </figure>
+        </section>
+
+        <!-- Section Formulaire -->
+        <section>
+            <h2>Formulaire de contact</h2>
+            <form action="#" method="post" autocomplete="on">
+
+                <fieldset>
+                    <legend>Informations personnelles</legend>
+
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" placeholder="Votre nom" required>
+
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="exemple@mail.com" required>
+
+                    <label for="age">Âge :</label>
+                    <input type="number" id="age" name="age" min="0" max="120" required>
+
+                    <label for="username">Nom d’utilisateur :</label>
+                    <input type="text" id="username" name="username" value="Luc" readonly>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Préférences</legend>
+
+                    <label for="bio">Biographie :</label>
+                    <textarea id="bio" name="bio" placeholder="Parlez-nous de vous" rows="4" required></textarea>
+
+                    <p>Genre :</p>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Homme</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Femme</label><br>
+
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">S'abonner à la newsletter</label><br>
+
+                    <label for="country">Pays :</label>
+                    <select id="country" name="country" required>
+                        <option value="">Sélectionnez</option>
+                        <option value="togo">Togo</option>
+                        <option value="france">France</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </fieldset>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Exercice Dev Web - HTML5 Form</p>
+    </footer>
+
+</body>
+</html>
